@@ -1,0 +1,20 @@
+/*
+ * 
+ * 
+ * 
+ * 
+ * */
+
+public class Square extends Shape{
+   
+   // properties 
+   
+   private int side;
+   
+   public Square( int side )
+   {
+    super();
+    this.side = side;
+      
+   }
+}

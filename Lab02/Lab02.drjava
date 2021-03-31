@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20190813-220051">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Test.java" package="" timestamp="05-Mar-2020 14:08:51">
+        <select from="627" to="627"/>
+        <scroll column="228" row="0"/>
+      </file>
+      <file name="MySimpleURLReader.java" package="" timestamp="05-Mar-2020 14:08:51">
+        <select from="627" to="627"/>
+        <scroll column="228" row="0"/>
+      </file>
+      <file name="Menu.java" package="" timestamp="05-Mar-2020 14:08:51">
+        <select from="627" to="627"/>
+        <scroll column="228" row="0"/>
+      </file>
+      <file name="HTMLFilteredReader.java" package="" timestamp="05-Mar-2020 14:08:50">
+        <select from="627" to="627"/>
+        <scroll column="228" row="0"/>
+      </file>
+      <file name="SimpleURLReader.java" package="" timestamp="05-Mar-2020 14:08:51">
+        <select from="627" to="627"/>
+        <scroll column="228" row="0"/>
+      </file>
+      <file name="XHTMLFilteredReader.java" package="" timestamp="05-Mar-2020 14:08:51">
+        <select from="627" to="627"/>
+        <scroll column="228" row="0"/>
+      </file>
+      <file name="Currency.java" package="" timestamp="05-Mar-2020 14:08:50">
+        <select from="627" to="627"/>
+        <scroll column="228" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath>
+      <file absolute="false" name="../cs1.jar"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

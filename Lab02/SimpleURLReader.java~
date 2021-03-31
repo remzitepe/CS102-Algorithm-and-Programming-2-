@@ -1,0 +1,42 @@
+/*
+ * This is the SimpleURLReader class
+ * @author_Tepe_Remzi
+ * @version_04.03.2020
+ * 
+ * */
+public class SimpleURLReader{
+   
+   // properties
+   private String url;
+   private int line;
+ 
+   /*
+    * 
+    * 
+    */
+   public SimpleURLReader( String url )
+   {
+      this.url = url;
+   }
+   
+   
+   /*
+    * 
+    * 
+    */
+   public String getPageContents()
+   {
+      return url;
+   }
+   
+   /*
+    * 
+    * 
+    */
+   public int getLineCount()
+   {
+      return line;
+   }
+   
+   
+}

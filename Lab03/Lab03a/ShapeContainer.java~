@@ -1,0 +1,56 @@
+import java.util.*;
+/*
+ * 
+ * 
+ * 
+ * 
+ * */
+
+public class ShapeContainer {
+   
+   // propereties
+   
+   private ArrayList <Shape> shapes;
+
+   public ShapeContainer(){
+    shapes = new ArrayList <Shape>();  
+   }
+   
+   public void add( Shape s ){
+      
+      shapes.add( s );
+      
+   }
+   
+   public double getArea(){
+      
+      double allArea;
+      
+      allArea = 0;
+      
+      for ( int i = 0; i < shapes.size(); i++)
+      {
+         allArea = allArea + shapes.get( i ).getArea();
+      }
+      return allArea;
+   }
+   
+   public String toString(){
+      
+      String str;
+      String s;
+      str = "";
+      s = "";
+      for( int i = 0; i < shapes.size(); i++)
+      {
+         str = str + "Shape " + i + " is: " + shapes.get( i ).toString() + "\n";   
+      }
+      return str;
+   }
+   
+   public void remove( int i ){
+      
+      shapes.remove( i );
+   }
+   
+}

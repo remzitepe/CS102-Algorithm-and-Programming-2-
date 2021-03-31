@@ -1,0 +1,42 @@
+import cs1.SimpleURLReader;
+/*
+ * This is the MySimpleURLReader class
+ * @author_Tepe_Remzi
+ * @version_04.03.2020
+ * 
+ * */
+public class MySimpleURLReader extends SimpleURLReader{
+   
+   // properties
+   
+   private String url;
+   
+   // constructors
+   
+   public MySimpleURLReader( String url ){
+      
+       super( url );
+       this.url = url;
+    }
+   
+   // methods
+   
+   public String getURL()
+   { 
+      return url;
+   }
+   
+   public String getName(){
+      
+    int index;
+
+    index = url.lastIndexOf( '/' );
+
+    return url.substring( index + 1 );
+  }
+   
+   public String getPageContents(){
+      
+      return ( super.getPageContents() ).substring(4);
+  }  
+}

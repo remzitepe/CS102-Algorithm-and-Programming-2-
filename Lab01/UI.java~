@@ -1,0 +1,112 @@
+import java.util.Scanner;
+public class UI{
+   private static void Interface()
+   {
+         System.out.print( ""
+    + "\n 1.Create a new empty collection with a specified maximum capacity (any previous values are lost!)"
+    + "\n 2.Read a set of positive values into the collection (use a negative value to indicate all the values have been entered.)"
+    + "\n 3.Print the collection of values."
+    + "\n 4.Add a value to the collection of values at a specified location"
+    + "\n 5.Remove the value at a specified location from the collection of values"
+    + "\n 6.Read a single test value."
+    + "\n 7.Compute the set of locations of the test value within the collection* (see note below)."
+    + "\n 8.Print the set of locations." );
+    System.out.println("\n 9.Quit the program. " ); 
+    System.out.println( " Input what you want: " );
+   }
+   public static void main( String args[] )
+   {
+      Scanner scan = new Scanner( System.in);
+      
+      Interface();
+      
+      int options = scan.nextInt();
+      if ( options == 1 )
+      { 
+        System.out.println( " Choose your max limit of your array " );
+        int maxLimit = scan.nextInt();
+        IntBag array = new IntBag( maxLimit );
+        
+        boolean moveOn = true;
+        while ( moveOn )
+        {
+        Interface();
+        options = scan.nextInt();
+        if ( options == 2 )
+        {
+           System.out.println( " Add numbers to your array, input negative numbers to exit " );
+           int count = 0;
+           while ( count < 1 )
+           {
+              int numbers = scan.nextInt();
+              if ( numbers < 0 )
+              {
+                 count++;
+              }
+              else
+                 array.addEnd( numbers );
+           }
+        }
+        else if ( options == 3 )
+        {
+           System.out.println( array );   
+        }
+        else if ( options == 4 )
+        {
+           System.out.println( " Choose location and number to add that specified location " );
+           int location = scan.nextInt();
+           int num = scan.nextInt();
+           array.addTo( location, num );
+        }   
+        else if ( options == 9 )
+        {
+           moveOn = false;
+         } 
+        else if ( options == 5 )
+        {
+           System.out.println( " Remove the value at specified location." );
+           int remove = scan.nextInt();
+           array.remove( remove );
+        }
+        else if ( options == 6 )
+        {
+          System.out.println( " Input a test value " );
+          int testValue = scan.nextInt();
+          if ( array.test( testValue ) )
+          {
+             System.out.println( testValue + " is in the array " );
+             Interface();
+             options = scan.nextInt();
+             if ( options == 7 )
+             {  
+                String s =array.findAll( testValue );
+                Interface();
+                options = scan.nextInt();
+                if ( options == 8 )
+                {
+                 System.out.println( s );  
+                }
+             }
+             
+          }
+          else 
+             System.out.println( " There is no such number " );
+        }
+        
+    
+        
+        
+        
+           
+           
+        
+           }
+          
+        }
+        System.out.println( " you quit the programme " );
+      } 
+   }
+
+      
+   
+   
